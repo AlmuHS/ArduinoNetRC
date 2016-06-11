@@ -112,7 +112,7 @@ una mayor autonomía al vehículo.
 
 Para la realización de las comunicaciones se pueden usar tres estrategias:
 
- 1. Uso de un servidor entre la aplicación y arduino
+ Opcion 1: Uso de un servidor entre la aplicación y arduino
 
 Arduino y la aplicación cliente mandarían sus informaciones a un servidor común,
 que redireccionaria estas informaciones a sus destinos correspondientes.
@@ -126,7 +126,7 @@ con el coste económico que esta conlleva.
 La implementación física se podría realizar a través de una tarjeta de expansión
 (shield) GSM para Arduino
 
- 2.  Creación de una red privada virtual (VPN)
+ Opcion 2:  Creación de una red privada virtual (VPN)
 
 Se crearía una VPN con una subred donde estarían conectadas la aplicación y arduino.
 
@@ -147,7 +147,7 @@ SOC compatible con Linux.
 La IP publica se podria obtener a traves del servicio NoIP, el cual nos ofrece
 un servicio DNS de bajo coste, y con un año de prueba gratuita.
 
- 3. Conexión “tradicional” tipo Web, usando router, DNS y puertos
+ Opcion 3: Conexión “tradicional” tipo Web, usando router, DNS y puertos
 
 Ambos extremos podrán disponer de IP's dinámicas, y serán los routers y los DNS
 los encargados de redirigir la conexión a través de sus respectivos puertos.
