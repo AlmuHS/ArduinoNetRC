@@ -112,7 +112,7 @@ una mayor autonomía al vehículo.
 
 Para la realización de las comunicaciones se pueden usar tres estrategias:
 
- 1 Uso de un servidor entre la aplicación y arduino
+ 1. Uso de un servidor entre la aplicación y arduino
 
 Arduino y la aplicación cliente mandarían sus informaciones a un servidor común,
 que redireccionaria estas informaciones a sus destinos correspondientes.
