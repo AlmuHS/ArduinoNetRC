@@ -53,8 +53,6 @@ El equipo completo deberá estar formado por, al menos, 9 personas; habiendo 3 p
 El vehículo será de tracción trasera, con dos motores: un motor principal, y un motor auxiliar.
 Además, las ruedas delanteras contarán con un mecanismo de dirección, de forma similar a un coche real.
 
-Los motores deberán ser de tipo Paso a Paso, para poder permitir la realización del control de revoluciones,
-
 El motor principal aportaría potencia al vehículo, pero poca velocidad,
 la cual podra ser compensada mediante la activacion del motor auxiliar.
 
