@@ -62,6 +62,8 @@ numero de revoluciones superior a este.
 Este puede ser activado de forma manual por el usuario, o de forma automática,
 cuando el motor principal llegue a su máximo de revoluciones.
 
+El motor auxiliar funcionara en paralelo al motor principal, manteniendo un equilibrio de velocidad/potencia en el vehiculo
+
 El turbo proporcionaría un incremento brusco de velocidad, que seria instantáneo,
 durando apenas un par de segundos.
 
