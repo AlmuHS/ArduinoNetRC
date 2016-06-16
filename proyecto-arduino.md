@@ -194,6 +194,8 @@ las instrucciones e informaciones del vehículo.
 La aplicación cliente debe estar capacitada para establecer la conexión
 con la placa Arduino y mandar/recibir las informaciones del vehículo.
 
+Esta podra desarrollarse en Processing, para facilitar la comunicacion con Arduino.
+
 Para simplificar la programación, la aplicación tendrá una interfaz de escritorio.
 
 Esta interfaz estará dividida en tres partes:
