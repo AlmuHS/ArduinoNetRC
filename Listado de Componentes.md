@@ -4,10 +4,9 @@
 
 * Motor principal
 
-		[http://www.electan.com/motor-30v-nominal-p-1544.html](http://www.electan.com/motor-30v-nominal-p-1544.html)
+		[http://www.electan.com/motor-30v-nominal-p-1544.html]
 
-		[http://tienda.bricogeek.com/motores/255-motor-dc-37x57mm-100-1.html](http://tienda.bricogeek.com/motores/255-motor-dc-37x57mm-100-1.html)
-
+		[http://tienda.bricogeek.com/motores/255-motor-dc-37x57mm-100-1.html]
 * Chasis
 
 [https://www.amazon.es/Ularmo-Topspeed-divertido-juguete-Control/dp/B01AXNU90Y/ref=sr_1_6?s=toys&ie=UTF8&qid=1465424022&sr=1-6](https://www.amazon.es/Ularmo-Topspeed-divertido-juguete-Control/dp/B01AXNU90Y/ref=sr_1_6?s=toys&ie=UTF8&qid=1465424022&sr=1-6&keywords=chasis+rc)
