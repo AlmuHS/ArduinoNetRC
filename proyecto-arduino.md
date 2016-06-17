@@ -136,10 +136,7 @@ existiendo una dirección IP diferente para la placa Arduino y la aplicación cl
 Como ventaja, contaría con la simplicidad de su implementación, puesto que las
 comunicaciones se reducirían a una (falsa) red local.
 
-Como inconveniente, tendría la posible obligación de una IP publica, y la complicación
-del montaje físico, dado que el shield 3G de Arduino podría no contar con esta
-funcionalidad, lo que nos obligaría a hacer uso de una Raspberry Pi junto
-a un minirouter 3G para establecer la conexión.
+Como inconveniente tendria la necesidad de un sistema operativo donde implementar la VPN.
 
 Se podria implementar usando un dispositivo Arduino Yun, que incorpora un modulo
 SOC compatible con Linux.
@@ -185,6 +182,10 @@ y de otros componentes externos.
 
 Ademas, el uso de VPN aporta una mayor seguridad en las comunicaciones,
 las cuales podran ir cifradas y protegidas de ataques externos.
+
+Para ahorrar costes, hemos decidido usar el dispositivo Dragino Yun shield, el cual
+podemos usar con cualquier placa Arduino, con las mismas funcionalidades que el Arduino Yun.
+
 
 ##Desarrollo de la Aplicación
 
