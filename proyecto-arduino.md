@@ -1,8 +1,8 @@
 <meta http-equiv="content-type" content="text/html;charset=UTF-8">
 
-#Proyecto ArduinoNetRC
+# Proyecto ArduinoNetRC
 
-##Idea general
+## Idea general
 
 La idea consiste en construir un coche basado en Arduino, que se pueda controlar de forma
 remota a través de internet mediante una aplicación cliente.
@@ -10,7 +10,7 @@ remota a través de internet mediante una aplicación cliente.
 El objetivo es que el coche se pueda controlar desde cualquier parte del mundo,
 pudiendo estar el usuario y el coche en ciudades distintas.
 
-###Funcionalidades del Vehículo
+### Funcionalidades del Vehículo
 
 El vehículo contaría con una cámara, que mandaría imágenes en directo a la
 aplicación cliente; y sensores de movimiento, que mejorarían el control del vehículo.
@@ -21,7 +21,7 @@ y opción de turbo; todos controlables por el usuario desde la aplicación clien
 Opcionalmente, se le podrían añadir sensores de luminosidad conectados a unos faros,
 que encendiesen los faros al pasar por una habitación poco iluminada.
 
-##Desarrollo del Proyecto
+## Desarrollo del Proyecto
 
 El desarrollo del proyecto se realizara de forma incremental, empezando por un coche
 básico de un solo motor y cámara, y realizando ampliaciones y mejoras hasta llegar
@@ -74,7 +74,7 @@ del vehículo, uno en el frontal, y uno a cada lado.
 
 Todas estas ideas estarían sujetos a cambios por decisión del equipo de montaje
 
-###Control y Comunicaciones
+### Control y Comunicaciones
 
 El control del Vehículo se haría a través de una placa Arduino,
 que recibiría instrucciones a través de Internet de la aplicación cliente.
@@ -112,48 +112,46 @@ una mayor autonomía al vehículo.
 
 Para la realización de las comunicaciones se pueden usar tres estrategias:
 
- Opcion 1: Uso de un servidor entre la aplicación y arduino
+ - **Opcion 1: Uso de un servidor entre la aplicación y Arduino**
 
-Arduino y la aplicación cliente mandarían sus informaciones a un servidor común,
-que redireccionaria estas informaciones a sus destinos correspondientes.
+   Arduino y la aplicación cliente mandarían sus informaciones a un servidor   común, que redireccionaria estas informaciones a sus destinos correspondientes.
 
-Como ventajas incluiría la simplicidad del diseño, usando una única dirección IP
+   Como ventajas incluiría la simplicidad del diseño, usando una única dirección IP
 para todas las comunicaciones.
 
-Como inconvenientes incluiría la obligatoriedad de obtener una IP publica,
+   Como inconvenientes incluiría la obligatoriedad de obtener una IP publica,
 con el coste económico que esta conlleva.
 
-La implementación física se podría realizar a través de una tarjeta de expansión
+   La implementación física se podría realizar a través de una tarjeta de expansión
 (shield) GSM para Arduino
 
- Opcion 2:  Creación de una red privada virtual (VPN)
+ - **Opcion 2:  Creación de una red privada virtual (VPN)**
 
-Se crearía una VPN con una subred donde estarían conectadas la aplicación y arduino.
+    Se crearía una VPN con una subred donde estarían conectadas la aplicación y Arduino.
 
-Todas las informaciones se mandarían de forma cifrada usando esta red,
+   Todas las informaciones se mandarían de forma cifrada usando esta red,
 existiendo una dirección IP diferente para la placa Arduino y la aplicación cliente.
 
-Como ventaja, contaría con la simplicidad de su implementación, puesto que las
+   - Como ventaja, contaría con la simplicidad de su implementación, puesto que las
 comunicaciones se reducirían a una (falsa) red local.
 
-Como inconveniente tendria la necesidad de un sistema operativo donde implementar la VPN.
+   - Como inconveniente tendria la necesidad de un sistema operativo donde implementar la VPN.
 
-Se podria implementar usando un dispositivo Arduino Yun, que incorpora un modulo
+   Se podria implementar usando un dispositivo Arduino Yun, que incorpora un modulo
 SOC compatible con Linux.
 
-La IP publica se podria obtener a traves del servicio NoIP, el cual nos ofrece
+   La IP publica se podria obtener a traves del servicio NoIP, el cual nos ofrece
 un servicio DNS de bajo coste, y con un año de prueba gratuita.
 
- Opcion 3: Conexión “tradicional” tipo Web, usando router, DNS y puertos
+ - **Opcion 3: Conexión “tradicional” tipo Web, usando router, DNS y puertos**
 
-Ambos extremos podrán disponer de IP's dinámicas, y serán los routers y los DNS
-los encargados de redirigir la conexión a través de sus respectivos puertos.
-
-Como ventaja, contaría con la posibilidad de uso del shield Arduino 3G y el
-ahorro del coste de la IP publica.
-
-Como inconveniente, estarían los costos del DNS y la complejidad del diseño.
-
+	Ambos extremos podrán disponer de IP's dinámicas, y serán los routers y los DNS	los encargados de redirigir la conexión a través de sus respectivos puertos.
+	
+	- Como ventaja, contaría con la posibilidad de uso del shield Arduino 3G y el
+	ahorro del coste de la IP publica.
+	
+	- Como inconveniente, estarían los costos del DNS y la complejidad del diseño.
+	
 Finalmente, para ahorrar costes, existiría otra posibilidad de implementación
 física de la red, que se ajustaría a las tres estrategias de diseño.
 
@@ -170,10 +168,11 @@ código de proyectos parecidos.
 Como inconveniente estaría la reducción de autonomía del vehículo,
 debido al gasto de batería del smartphone.
 
-##Decision
+## Decision
 
 Tras evaluar todas las opciones planteadas, finalmente nos hemos decantado
-por la opcion 2, basada en VPN. 
+por la opcion 2, basada en VPN.
+
 
 El uso de un dispositivo Arduino Yun permitira darle mas flexibilidad al proyecto,
 con un coste inferior al del resto de opciones y una implementacion mas
@@ -183,11 +182,8 @@ y de otros componentes externos.
 Ademas, el uso de VPN aporta una mayor seguridad en las comunicaciones,
 las cuales podran ir cifradas y protegidas de ataques externos.
 
-Para ahorrar costes, hemos decidido usar el dispositivo Dragino Yun shield, el cual
-podemos usar con cualquier placa Arduino, con las mismas funcionalidades que el Arduino Yun.
 
-
-##Desarrollo de la Aplicación
+## Desarrollo de la Aplicación
 
 La aplicación seria un simple cliente, con el único objetivo de enviar y recibir
 las instrucciones e informaciones del vehículo.
